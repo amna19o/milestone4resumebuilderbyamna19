@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Editable Resume Builder made by <i>Amna Amin</i></h1>
+    <form id="resumeForm">
+        <!-- Personal data -->
+        <fieldset>
+            <legend>Personal Data</legend>
+            <label for="1stName">First Name:</label>
+            <input type="text" id="1stName" name="1stName" required><br>
+            <label for="2ndName">Second Name:</label>
+            <input type="text" id="2ndName" name="2ndName" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="abc@gmail.com" name="email" required><br>
+            <label for="DateofBirth">Date Of Birth:</label>
+            <input type="date" id="DateofBirth" name="DateofBirth" required><br>
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            <label for="profilePicture">Add Your Profile Picture:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </fieldset><br>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Academic Record</legend>
+            <label for="uniName">University Name:</label>
+            <input type="text" id="uniName" name="uniName" required><br>
+            <label for="field">Field:</label>
+            <input type="text" id="field" name="field" required><br>
+            <label for="uniPassingYear">Passing Year:</label>
+            <input type="text" id="uniPassingYear" name="uniPassingYear" required><br>
+            <label for="grade">Grade:</label>
+            <input type="text" id="grade" name="grade" required><br>
+
+            <label for="cllgName">College Name:</label>
+            <input type="text" id="cllgName" name="cllgName" required><br>
+            <label for="cllgField">Field:</label>
+            <input type="text" id="cllgField" name="cllgField" required><br>
+            <label for="cllgPassYear">Passing Year:</label>
+            <input type="text" id="cllgPassYear" name="cllgPassYear" required><br>
+            <label for="cllgGrade">Grade:</label>
+            <input type="text" id="cllgGrade" name="cllgGrade" required><br>
+
+            <label for="schlName">School Name:</label>
+            <input type="text" id="schlName" name="schlName" required><br>
+            <label for="schlField">Field:</label>
+            <input type="text" id="schlField" name="schlField" required><br>
+            <label for="schlPassYear">Passing Year:</label>
+            <input type="text" id="schlPassYear" name="schlPassYear" required><br>
+            <label for="schlGrade">Grade:</label>
+            <input type="text" id="schlGrade" name="schlGrade" required>
+        </fieldset><br>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <textarea id="skills" name="skills" required></textarea>
+        </fieldset><br>
+
+        <!-- Experience -->
+        <fieldset>
+            <legend>Experience</legend>
+            <textarea id="experience" name="experience" required></textarea>
+        </fieldset><br>
+
+        <button type="submit">Generate Resume!</button>
+    </form>
+
+    <div id="resumeOutput">
+        <!-- Resume will be generated below! -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
